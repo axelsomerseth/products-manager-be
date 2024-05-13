@@ -1,0 +1,21 @@
+{
+  "name": "products-manager-be",
+  "version": "1.0.0",
+  "description": "Products Manager Backend",
+  "main": "./build/index.js",
+  "scripts": {
+    "dev": "npx ts-node --type-check ./source/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axelsomerseth/products-manager-be.git"
+  },
+  "author": "Axel Somerseth Cordova <axelsomerseth@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
