@@ -13,7 +13,7 @@ export class Product1715663845069 implements MigrationInterface {
         "stock" integer NOT NULL,
         "price" float NOT NULL,
         "comparePrice" float NOT NULL,
-        "barcode" varchar(13) NOT NULL,
+        "barcode" varchar(13),
         "userId" integer,
         CONSTRAINT "UQ_db7355f7bd36c547c8a4f539e57" UNIQUE ("handle"),
         CONSTRAINT "UQ_34f6ca1cd897cc926bdcca1ca39" UNIQUE ("sku"),

@@ -37,7 +37,7 @@ class Product {
   @Column({ type: "float" })
   comparePrice: number;
 
-  @Column({ length: 13 })
+  @Column({ length: 13, nullable: true })
   barcode: string;
 
   @ManyToOne(() => User, (user) => user.id, {
