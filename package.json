@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "npx ts-node --type-check ./source/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migration:generate": "typeorm-ts-node-esm migration:generate ./source/db/migrations/ --dataSource ./source/db/connection.ts"
+    "migration:generate": "typeorm-ts-node-esm migration:generate ./source/db/migrations/ --dataSource ./source/db/connection.ts",
+    "migration:up": "typeorm-ts-node-esm migration:run --dataSource ./source/db/connection.ts",
+    "migration:down": "typeorm-ts-node-esm migration:revert --dataSource ./source/db/connection.ts",
+    "migration:show": "typeorm-ts-node-esm migration:show --dataSource ./source/db/connection.ts"
   },
   "repository": {
     "type": "git",

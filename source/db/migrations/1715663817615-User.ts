@@ -1,4 +1,5 @@
 import { MigrationInterface, QueryRunner } from "typeorm";
+import { runUserSeeds } from "../seeds/user";
 
 export class User1715663817615 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
@@ -12,6 +13,8 @@ export class User1715663817615 implements MigrationInterface {
         CONSTRAINT "UQ_e12875dfb3b1d92d7d7c5377e22" UNIQUE ("email")
       )`
     );
+
+    await runUserSeeds(queryRunner);
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
