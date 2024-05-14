@@ -1,8 +1,5 @@
 import "reflect-metadata";
 
-import dotenv from "dotenv";
-dotenv.config();
-
 import { connectDatabase } from "./db/connection";
 connectDatabase();
 

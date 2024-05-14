@@ -5,7 +5,8 @@
   "main": "./build/index.js",
   "scripts": {
     "dev": "npx ts-node --type-check ./source/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migration:generate": "typeorm-ts-node-esm migration:generate ./source/db/migrations/ --dataSource ./source/db/connection.ts"
   },
   "repository": {
     "type": "git",
