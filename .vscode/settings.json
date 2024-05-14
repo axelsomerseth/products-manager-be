@@ -1,0 +1,10 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "Products Manager",
+      "database": "${workspaceFolder:products-manager-be}/products-manager-db"
+    }
+  ]
+}
