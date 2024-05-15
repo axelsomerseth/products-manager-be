@@ -1,9 +1,7 @@
 import { RequestHandler, Request, Response } from "express";
 import { AppDataSource } from "../db/connection";
 
-const healthCheck: RequestHandler = (req: Request, res: Response) => {
-  AppDataSource.isInitialized;
-
+const healthCheck: RequestHandler = async (req: Request, res: Response) => {
   res.status(200);
   res.json({
     status: "UP",
